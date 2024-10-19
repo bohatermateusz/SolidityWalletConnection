@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MetaMask DApp</title>
+    <!-- Include the Web3.js library -->
+    <script src="node_modules/web3/dist/web3.min.js"></script>
+    <!-- Link to your external JavaScript file -->
+    <script src="script.js" defer></script>
+</head>
+<body>
+    <button class="enableMetamask">Enable MetaMask</button>
+    <h2><span class="statusText"></span></h2>
+
+    <input type="text" id="address" placeholder="Contract Address" disabled="true" />
+    <button class="startStopEventListener" disabled="true">Listen to Events</button>
+
+    <span class="eventResult"></span>
+</body>
+</html>
