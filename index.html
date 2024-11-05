@@ -10,12 +10,74 @@
     <script src="script.js" defer></script>
 </head>
 <body>
-    <button class="enableMetamask">Enable MetaMask</button>
-    <h2><span class="statusText"></span></h2>
+    <h1>Bonding Curve Token DApp</h1>
 
-    <input type="text" id="address" placeholder="Contract Address" disabled="true" />
-    <button class="startStopEventListener" disabled="true">Listen to Events</button>
+    <!-- MetaMask Connection -->
+    <button class="enableMetamask">Connect MetaMask</button>
+    <p class="statusText"></p>
 
-    <span class="eventResult"></span>
+    <!-- Deploy New Coin -->
+    <button class="deployContract" disabled>Deploy New Coin</button>
+
+    <!-- Contract Interaction Section -->
+    <div>
+        <h2>Interact with Contract</h2>
+        <input type="text" id="address" placeholder="Contract Address" disabled>
+        <button class="startStopEventListener" disabled>Start Listening to Events</button>
+        <div class="eventResult"></div>
+    </div>
+
+    <!-- Buy Tokens -->
+    <div>
+        <h3>Buy Tokens</h3>
+        <input type="number" id="buyAmount" placeholder="Amount in ETH">
+        <button class="buyTokensButton" disabled>Buy Tokens</button>
+    </div>
+
+    <!-- Get Current Price -->
+    <div>
+        <h3>Get Current Price</h3>
+        <button class="getCurrentPriceButton" disabled>Get Current Price</button>
+        <p id="currentPrice"></p>
+    </div>
+
+    <!-- View Market Cap -->
+    <div>
+        <h3>Market Cap</h3>
+        <button class="getMarketCapButton" disabled>Get Market Cap</button>
+        <p id="marketCap"></p>
+    </div>
+
+    <!-- View Token Details -->
+    <div>
+        <h3>Token Details</h3>
+        <button class="getTokenDetailsButton" disabled>Get Token Details</button>
+        <p id="tokenDetails"></p>
+    </div>
+
+    <!-- Transfer Tokens -->
+    <div>
+        <h3>Transfer Tokens</h3>
+        <input type="text" id="transferTo" placeholder="Recipient Address">
+        <input type="number" id="transferAmount" placeholder="Amount">
+        <button class="transferButton" disabled>Transfer</button>
+    </div>
+
+    <!-- Approve Tokens -->
+    <div>
+        <h3>Approve Tokens</h3>
+        <input type="text" id="approveSpender" placeholder="Spender Address">
+        <input type="number" id="approveAmount" placeholder="Amount">
+        <button class="approveButton" disabled>Approve</button>
+    </div>
+
+    <!-- Transfer From -->
+    <div>
+        <h3>Transfer From</h3>
+        <input type="text" id="transferFromAddress" placeholder="From Address">
+        <input type="text" id="transferToAddress" placeholder="To Address">
+        <input type="number" id="transferFromAmount" placeholder="Amount">
+        <button class="transferFromButton" disabled>Transfer From</button>
+    </div>
 </body>
 </html>
